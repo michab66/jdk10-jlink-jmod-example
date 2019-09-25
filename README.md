@@ -1,4 +1,4 @@
-Maven JDK9 Jigsaw Example
+Maven JDK11 Jigsaw Example
 =========================
 
 Status
