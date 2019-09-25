@@ -5,6 +5,7 @@ Status
 ------
  * Currently not more than a Proof of Concept 
  * Everything here is speculative!
+ * Currently only 'maven-example' is switched to Java 11
 
 Overview
 --------
