@@ -14,4 +14,9 @@ Overview
  (using [`maven-jlink-plugin`](https://github.com/apache/maven-jlink-plugin/)
  and [`maven-jmod-plugin`](https://github.com/apache/maven-jmod-plugin/)
  Maven [plugins](http://maven.apache.org/plugins/)).
+ 
+ TODO
+ ----
+ 
+ * Try to successfully add a dependency, e.g. JavaFX.
 
