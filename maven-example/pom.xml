@@ -11,8 +11,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
-    <maven.compiler.target>1.9</maven.compiler.target>
-    <maven.compiler.source>1.9</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
   </properties>
   <scm>
     <developerConnection>scm:git:ssh://git@github.com/khmarbaise/jdk9-jlink-jmod-example.git</developerConnection>
@@ -35,28 +35,47 @@
       <url>file://${HOME}/distribution/site/</url>
     </site>
   </distributionManagement>
+  <pluginRepositories>
+    <pluginRepository>
+        <id>apache.snapshots</id>
+        <url>http://repository.apache.org/snapshots/</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </pluginRepository>
+</pluginRepositories>
+  
   <build>
+  
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.1</version>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jlink-plugin</artifactId>
-        <version>3.0.0-alpha-1</version>
-        <extensions>true</extensions>
-        <configuration>
-          <noHeaderFiles>true</noHeaderFiles>
-          <noManPages>true</noManPages>
-        </configuration>
-      </plugin>
+    <artifactId>maven-jlink-plugin</artifactId>
+    <version>3.0.0-alpha-2-SNAPSHOT</version>
+    <extensions>true</extensions>
+    <configuration>
+        <!-- configuration elements goes here -->
+    </configuration>
+</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jmod-plugin</artifactId>
         <version>3.0.0-alpha-1</version>
         <extensions>true</extensions>
+        <dependencies>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>6.2</version> <!-- Use newer version of ASM -->
+        </dependency>
+    </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -104,4 +123,14 @@
     <module>mod-jar</module>
     <module>mod-jlink</module>
   </modules>
+  
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base -->
+    <!-- <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-base</artifactId>
+      <version>11</version>
+    </dependency> -->
+  </dependencies>
+
 </project>
