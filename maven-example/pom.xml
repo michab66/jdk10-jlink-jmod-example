@@ -45,7 +45,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jlink-plugin</artifactId>
-        <version>3.0.0-alpha-2-SNAPSHOT</version>
+        <version>3.0.0-alpha-1</version>
         <extensions>true</extensions>
         <configuration>
           <noHeaderFiles>true</noHeaderFiles>
@@ -74,6 +74,8 @@
           </execution>
         </executions>
       </plugin>
+      <!--
+      Want no toolchain. Uses JAVA_HOME by default.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-toolchains-plugin</artifactId>
@@ -93,7 +95,7 @@
             </jdk>
           </toolchains>
         </configuration>
-      </plugin>
+      </plugin> -->
     </plugins>
   </build>
   <modules>
