@@ -131,6 +131,14 @@
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-base</artifactId>
       <version>11</version>
+	  <!-- See https://github.com/javafxports/openjdk-jfx/issues/387 -->
+	  <classifier>win</classifier>
+      <exclusions> 
+	    <exclusion>
+          <groupId>org.openjfx</groupId>
+		  <artifactId>javafx-base</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
