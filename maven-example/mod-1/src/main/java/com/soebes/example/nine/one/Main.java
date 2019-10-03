@@ -1,5 +1,7 @@
 package com.soebes.example.nine.one;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class Main
 {
     public static void main( String[] args )
@@ -12,5 +14,10 @@ public class Main
                 System.out.println( " Arg: '" + arg + "'" );
             }
         }
+
+        SimpleStringProperty string =
+                new SimpleStringProperty( "micbinz" );
+
+        System.out.println( "property value " + string.getValue() );
     }
 }

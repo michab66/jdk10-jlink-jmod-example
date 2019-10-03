@@ -1,0 +1,6 @@
+--module-path
+"C:\\Users\\Michael\\.m2\\repository\\org\\openjfx\\javafx-base\\11\\javafx-base-11-win.jar;C:\\cygwin64\\tmp\\jdk11-jlink-jmod-example\\maven-example\\mod-jar\\target\\com.soebes.nine.jar-1.0-SNAPSHOT.jar;C:\\cygwin64\\tmp\\jdk11-jlink-jmod-example\\maven-example\\mod-jlink\\target\\classes;C:\\Progra~1\\Amazon~1\\jdk11.0.4_10\\jmods"
+--add-modules
+"javafx.base,com.soebes.nine.jar,org.apache"
+--output
+C:\cygwin64\tmp\jdk11-jlink-jmod-example\maven-example\mod-jlink\target\maven-jlink

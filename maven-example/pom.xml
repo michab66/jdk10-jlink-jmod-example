@@ -58,7 +58,7 @@
       </plugin>
       <plugin>
     <artifactId>maven-jlink-plugin</artifactId>
-    <version>3.0.0-alpha-2-SNAPSHOT</version>
+    <version>3.0.0-alpha-micbinz-SNAPSHOT</version>
     <extensions>true</extensions>
     <configuration>
         <!-- configuration elements goes here -->
