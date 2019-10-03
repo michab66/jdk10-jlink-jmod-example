@@ -1,0 +1,6 @@
+[submodule "maven-jlink-plugin"]
+	path = maven-jlink-plugin
+	url = https://github.com/michab66/maven-jlink-plugin.git
+[submodule "maven-jmod-plugin"]
+	path = maven-jmod-plugin
+	url = https://github.com/michab66/maven-jmod-plugin.git
